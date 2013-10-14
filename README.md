@@ -1,1 +1,7 @@
-Check out http://shopify.github.com/dashing for more information.
+StockDash
+=========
+
+Simple PSE Dashboard via [Dashing] and [Phisix API]
+
+[Dashing]: "http://shopify.github.io/dashing/"
+[Phisix API]: "http://phisix-api.appspot.com/"
