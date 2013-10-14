@@ -1,0 +1,31 @@
+<% content_for :title do %>PSE Dashboard<% end %>
+<% settings.stock_symbol = params["stock"] %>
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="intro" data-view="Text" data-title="PSE Dashboard" data-text="<%= settings.stock_symbol%>" data-moreinfo="Protip: You can drag the widgets around!"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="stock" data-view="Number" data-title="Current Price" data-moreinfo="" data-prefix="P"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="stock-volume" data-view="Meter" data-title="Current Volume" data-min="0" data-max="100"></div>
+    </li>
+
+    <li data-row="2" data-col="2" data-sizex="2" data-sizey="1">
+      <div data-id="twitter_mentions" data-view="Comments" style="background-color:#ff9618;" data-moreinfo="Tweets from PhStockExchange"></div>
+      <i class="icon-twitter icon-background"></i>
+    </li>
+
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+      <i class="icon-time icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="advances" data-view="List" data-unordered="true" data-title="Most Advances" data-moreinfo="Highest change as of current time"></div>
+    </li>
+  </ul>
+</div>
